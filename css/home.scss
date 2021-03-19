@@ -1,14 +1,23 @@
+@import './shared.scss';
 main{
     .location{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: red;
+        background-color: rgba(0,0,0,0.1);
     }
     .search{
         text-align: center;
         background-color: blue;
         padding: 2em;
+        button{
+            background-color: $pink;
+            color: white;
+            border: none;
+            font-size: 1em;
+            border-radius: 50px;
+            padding: 20px;
+        }
     }
     .filters{
         padding: 1em;
@@ -16,7 +25,7 @@ main{
             display: flex;
             align-items: center;
             border-radius: 20px;
-            background-color: purple;
+            background-color: red;
             padding: 20px;
             margin: 20px 0;
             .circle{
@@ -29,7 +38,7 @@ main{
                 border-radius: 50%;
                 min-height: 25px;
                 min-width: 25px;
-                background-color: red;
+                background-color: $purple;
             }
             h3{
                 padding: 0 20px;
@@ -47,7 +56,8 @@ main{
                 right: 2em;
                 margin-top: -190px;
                 padding: 0.5em;
-                background-color: seagreen;
+                background-color: $light_green;
+                color: seagreen;
             }
             img{
                 width: 100%;
@@ -58,6 +68,7 @@ main{
                 padding: 1em;
                 i{
                     float: right;
+                    color: $purple;
                 }
             }
         }

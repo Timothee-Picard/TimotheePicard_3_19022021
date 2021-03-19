@@ -1,3 +1,49 @@
+body, h1, figure, h3, ul {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  font-size: 10em;
+}
+
+footer {
+  padding: 1em;
+  background-color: slategray;
+}
+
+footer img {
+  width: 6em;
+}
+
+footer i {
+  position: absolute;
+}
+
+footer i + a {
+  margin-left: 2em;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  padding: 10px 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
 main .location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,13 +54,22 @@ main .location {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 main .search {
   text-align: center;
   background-color: blue;
   padding: 2em;
+}
+
+main .search button {
+  background-color: #FF79DA;
+  color: white;
+  border: none;
+  font-size: 1em;
+  border-radius: 50px;
+  padding: 20px;
 }
 
 main .filters {
@@ -29,7 +84,7 @@ main .filters .filter {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 20px;
-  background-color: purple;
+  background-color: red;
   padding: 20px;
   margin: 20px 0;
 }
@@ -50,7 +105,7 @@ main .filters .filter .circle {
   border-radius: 50%;
   min-height: 25px;
   min-width: 25px;
-  background-color: red;
+  background-color: #9356DC;
 }
 
 main .filters .filter h3 {
@@ -72,7 +127,8 @@ main .restaurant article .new {
   right: 2em;
   margin-top: -190px;
   padding: 0.5em;
-  background-color: seagreen;
+  background-color: #99E2D0;
+  color: seagreen;
 }
 
 main .restaurant article img {
@@ -87,5 +143,6 @@ main .restaurant article figcaption {
 
 main .restaurant article figcaption i {
   float: right;
+  color: #9356DC;
 }
 /*# sourceMappingURL=home.css.map */
