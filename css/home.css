@@ -1,0 +1,91 @@
+main .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: red;
+}
+
+main .search {
+  text-align: center;
+  background-color: blue;
+  padding: 2em;
+}
+
+main .filters {
+  padding: 1em;
+}
+
+main .filters .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background-color: purple;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+main .filters .filter .circle {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -30px;
+  margin-right: 20px;
+  border-radius: 50%;
+  min-height: 25px;
+  min-width: 25px;
+  background-color: red;
+}
+
+main .filters .filter h3 {
+  padding: 0 20px;
+}
+
+main .restaurant {
+  padding: 1em;
+}
+
+main .restaurant article {
+  background-color: royalblue;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+main .restaurant article .new {
+  position: absolute;
+  right: 2em;
+  margin-top: -190px;
+  padding: 0.5em;
+  background-color: seagreen;
+}
+
+main .restaurant article img {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+}
+
+main .restaurant article figcaption {
+  padding: 1em;
+}
+
+main .restaurant article figcaption i {
+  float: right;
+}
+/*# sourceMappingURL=home.css.map */

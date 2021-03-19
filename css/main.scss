@@ -1,0 +1,28 @@
+
+body,h1,figure,h3,ul{
+padding: 0;
+margin: 0;
+}
+header{
+    text-align: center;
+}
+footer{
+    padding: 1em;
+    background-color: slategray;
+    img{
+        width: 6em;
+    }
+    i{
+        position: absolute;
+        & + a {
+            margin-left: 2em;
+        }
+    }
+    ul{
+        list-style: none;
+        li{
+            padding: 10px 0;
+            
+        }
+    }
+}
