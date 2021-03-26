@@ -1,26 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 body, h1, figure, h3, ul {
   padding: 0;
   margin: 0;
 }
 
 header {
-  text-align: center;
-  padding: 10px 0;
-  -webkit-box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.1);
+  padding: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header img {
   font-size: 10em;
 }
 
-footer {
-  padding: 1em;
-  background-color: slategray;
+main img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-footer img {
-  width: 6em;
+footer {
+  padding: 1em;
+  background-color: #303030;
+  color: white;
+}
+
+footer span {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.2em;
 }
 
 footer i {
@@ -32,11 +53,12 @@ footer i + a {
 }
 
 footer ul {
+  margin-top: 10px;
   list-style: none;
 }
 
 footer ul li {
-  padding: 10px 0;
+  padding: 4px 0;
 }
 
 footer ul li a {

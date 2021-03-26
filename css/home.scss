@@ -1,14 +1,19 @@
 @import './shared.scss';
+header{
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+}
 main{
     .location{
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgba(0,0,0,0.1);
+        i{
+            padding: 1em;
+        }
     }
     .search{
         text-align: center;
-        background-color: blue;
         padding: 2em;
         button{
             background-color: $pink;
@@ -16,7 +21,8 @@ main{
             border: none;
             font-size: 1em;
             border-radius: 50px;
-            padding: 20px;
+            padding: 1em 2em;
+            box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.25);
         }
     }
     .filters{
@@ -25,7 +31,8 @@ main{
             display: flex;
             align-items: center;
             border-radius: 20px;
-            background-color: red;
+            background-color: #f6f6f6;
+            box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.15);
             padding: 20px;
             margin: 20px 0;
             .circle{
@@ -34,34 +41,44 @@ main{
                 justify-content: center;
                 align-items: center;
                 margin-left: -30px;
-                margin-right: 20px;
+                margin-right: 0px;
                 border-radius: 50%;
                 min-height: 25px;
                 min-width: 25px;
                 background-color: $purple;
+                color: white;
+            }
+            i{
+                color: #6d6d6d;
+                &:first-of-type{
+                    padding-left: 10px;
+                }
             }
             h3{
-                padding: 0 20px;
+                padding: 0 15px;
             }
         }
     }
     .restaurant{
         padding: 1em;
+        background-color: #f6f6f6;
         article{
-            background-color: royalblue;
+            background-color: white;
             border-radius: 20px;
             margin: 20px 0;
+            position: relative;
             .new{
-                position: absolute;
-                right: 2em;
-                margin-top: -190px;
                 padding: 0.5em;
                 background-color: $light_green;
                 color: seagreen;
+                border-radius: .125rem;
+                position: absolute;
+                top: 1rem;
+                right: .75rem;
             }
             img{
                 width: 100%;
-                height: 200px;
+                height: 180px;
                 border-radius: 20px 20px 0 0;
             }
             figcaption{
@@ -72,5 +89,29 @@ main{
                 }
             }
         }
+    }
+}
+.restaurant,.filters{
+    max-width: 1000px;
+    margin: auto;
+}
+@media screen and (min-width: 600px) {
+    h2{
+        width: 100%;
+    }
+    .restaurant{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        article{
+            width: 49%;
+        }
+    }
+}
+@media screen and (min-width: 950px){
+    .filters{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }

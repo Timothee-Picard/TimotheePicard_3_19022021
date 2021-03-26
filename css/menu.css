@@ -1,19 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 body, h1, figure, h3, ul {
   padding: 0;
   margin: 0;
 }
 
 header {
-  text-align: center;
+  padding: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  font-size: 10em;
+}
+
+main img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
   padding: 1em;
-  background-color: slategray;
+  background-color: #303030;
+  color: white;
 }
 
-footer img {
-  width: 6em;
+footer span {
+  font-family: "Shrikhand", cursive;
 }
 
 footer i {
@@ -30,5 +57,56 @@ footer ul {
 
 footer ul li {
   padding: 10px 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header i {
+  position: absolute;
+  left: 20px;
+}
+
+.slider {
+  background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  height: 250px;
+  width: 100%;
+  z-index: -1;
+}
+
+main {
+  margin-top: -50px;
+  background-color: red;
+  border-radius: 50px 50px 0 0;
+  padding: 1em;
+  padding-top: 2em;
+}
+
+main .mainHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main article {
+  background-color: white;
+  border-radius: 15px;
+  padding: 0 1em;
+}
+
+main article p {
+  width: 100%;
+}
+
+main article p span {
+  float: right;
 }
 /*# sourceMappingURL=menu.css.map */

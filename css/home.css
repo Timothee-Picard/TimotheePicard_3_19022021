@@ -1,26 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 body, h1, figure, h3, ul {
   padding: 0;
   margin: 0;
 }
 
 header {
-  text-align: center;
-  padding: 10px 0;
-  -webkit-box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.1);
+  padding: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header img {
   font-size: 10em;
 }
 
-footer {
-  padding: 1em;
-  background-color: slategray;
+main img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-footer img {
-  width: 6em;
+footer {
+  padding: 1em;
+  background-color: #303030;
+  color: white;
+}
+
+footer span {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.2em;
 }
 
 footer i {
@@ -32,16 +53,22 @@ footer i + a {
 }
 
 footer ul {
+  margin-top: 10px;
   list-style: none;
 }
 
 footer ul li {
-  padding: 10px 0;
+  padding: 4px 0;
 }
 
 footer ul li a {
   text-decoration: none;
   color: white;
+}
+
+header {
+  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
 }
 
 main .location {
@@ -57,9 +84,12 @@ main .location {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+main .location i {
+  padding: 1em;
+}
+
 main .search {
   text-align: center;
-  background-color: blue;
   padding: 2em;
 }
 
@@ -69,7 +99,9 @@ main .search button {
   border: none;
   font-size: 1em;
   border-radius: 50px;
-  padding: 20px;
+  padding: 1em 2em;
+  -webkit-box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.25);
 }
 
 main .filters {
@@ -84,7 +116,9 @@ main .filters .filter {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 20px;
-  background-color: red;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.15);
   padding: 20px;
   margin: 20px 0;
 }
@@ -101,39 +135,51 @@ main .filters .filter .circle {
       -ms-flex-align: center;
           align-items: center;
   margin-left: -30px;
-  margin-right: 20px;
+  margin-right: 0px;
   border-radius: 50%;
   min-height: 25px;
   min-width: 25px;
   background-color: #9356DC;
+  color: white;
+}
+
+main .filters .filter i {
+  color: #6d6d6d;
+}
+
+main .filters .filter i:first-of-type {
+  padding-left: 10px;
 }
 
 main .filters .filter h3 {
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 main .restaurant {
   padding: 1em;
+  background-color: #f6f6f6;
 }
 
 main .restaurant article {
-  background-color: royalblue;
+  background-color: white;
   border-radius: 20px;
   margin: 20px 0;
+  position: relative;
 }
 
 main .restaurant article .new {
-  position: absolute;
-  right: 2em;
-  margin-top: -190px;
   padding: 0.5em;
   background-color: #99E2D0;
   color: seagreen;
+  border-radius: .125rem;
+  position: absolute;
+  top: 1rem;
+  right: .75rem;
 }
 
 main .restaurant article img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   border-radius: 20px 20px 0 0;
 }
 
@@ -144,5 +190,42 @@ main .restaurant article figcaption {
 main .restaurant article figcaption i {
   float: right;
   color: #9356DC;
+}
+
+.restaurant, .filters {
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  h2 {
+    width: 100%;
+  }
+  .restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .restaurant article {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=home.css.map */

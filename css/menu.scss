@@ -1,1 +1,36 @@
 @import './shared.scss';
+header i{
+    position: absolute;
+    left: 20px;
+}
+.slider{
+    background-image: url('../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    height: 250px;
+    width: 100%;
+    z-index: -1;
+}
+main{
+    margin-top: -50px;
+    background-color: red;
+    border-radius: 50px 50px 0 0;
+    padding: 1em;
+    padding-top: 2em;
+    .mainHeader{
+        display: flex;
+        align-items: center;
+    }
+    article{
+        background-color: white;
+        border-radius: 15px;
+        padding: 0 1em;
+        p{
+            width: 100%;
+            span{
+                float: right;
+            }
+        }
+    }
+}
