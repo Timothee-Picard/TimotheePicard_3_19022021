@@ -30,6 +30,9 @@ main{
         text-transform: uppercase;
         font-weight: 400;
     }
+    section{
+        padding-top: 1em;
+    }
     article{
         box-shadow: 0.25em 0.25em 0.8em rgba(0, 0, 0, 0.10);
         background-color: white;
@@ -47,12 +50,12 @@ main{
         text-align: center;
         padding: 2.5em 0;
         button{
-            background-color: $pink;
+            background: linear-gradient($pink,$purple);
             color: white;
             border: none;
             font-size: 1em;
             border-radius: 50px;
-            padding: 1em 2em;
+            padding: 1em 3em;
             box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.25);
             font-weight: 600;
         }

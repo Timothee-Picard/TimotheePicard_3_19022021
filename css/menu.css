@@ -115,6 +115,10 @@ main h2 {
   font-weight: 400;
 }
 
+main section {
+  padding-top: 1em;
+}
+
 main article {
   -webkit-box-shadow: 0.25em 0.25em 0.8em rgba(0, 0, 0, 0.1);
           box-shadow: 0.25em 0.25em 0.8em rgba(0, 0, 0, 0.1);
@@ -138,12 +142,13 @@ main .order {
 }
 
 main .order button {
-  background-color: #FF79DA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   border: none;
   font-size: 1em;
   border-radius: 50px;
-  padding: 1em 2em;
+  padding: 1em 3em;
   -webkit-box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.25);
           box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.25);
   font-weight: 600;
