@@ -4,7 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-body, h1, figure, h3, ul {
+body, h1, figure, h3, ul, p {
   padding: 0;
   margin: 0;
 }
@@ -28,7 +28,7 @@ header img {
   font-size: 10em;
 }
 
-main img {
+img {
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -37,6 +37,11 @@ footer {
   padding: 1em;
   background-color: #303030;
   color: white;
+}
+
+footer .footerContent {
+  max-width: 1000px;
+  margin: auto;
 }
 
 footer span {

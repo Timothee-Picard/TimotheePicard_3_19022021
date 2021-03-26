@@ -2,7 +2,7 @@
 body{
     font-family: $fontText;
 }
-body,h1,figure,h3,ul{
+body,h1,figure,h3,ul,p{
 padding: 0;
 margin: 0;
 }
@@ -16,13 +16,17 @@ header{
         font-size: 10em;
     }
 }
-main img{
+img{
     object-fit: cover;
 }
 footer{
     padding: 1em;
     background-color: #303030;
     color: white;
+    .footerContent{
+        max-width: 1000px;
+        margin: auto;
+    }
     span{
         font-family: $titleText;
         font-size: 1.2em;
