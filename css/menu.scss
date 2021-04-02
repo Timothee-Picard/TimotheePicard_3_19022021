@@ -39,11 +39,18 @@ main{
         border-radius: 15px;
         padding: 0.5em 1em;
         margin: 1em 0;
+        //opacity: 0;
         p{
             width: 100%;
             span{
                 float: right;
             }
+        }
+    }
+    //Animation éléments menu
+    @for $i from 1 through 10 {
+        .delay-#{$i} {
+            animation: test 1s #{$i/10}s both;
         }
     }
     .order{
@@ -59,5 +66,16 @@ main{
             box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.25);
             font-weight: 600;
         }
+    }
+}
+
+@keyframes test {
+    0% {
+        opacity: 0;
+        transform: translateY(100px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
     }
 }

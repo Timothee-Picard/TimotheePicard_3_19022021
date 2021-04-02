@@ -137,7 +137,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: 1s both loaderTimeout 3s;;
+    animation: 0.5s both loaderTimeout 2s;
     span{
         font-size: 30px;
         padding: 0 0.5em;
@@ -162,7 +162,11 @@ main{
 }
 
 @keyframes loaderTimeout {
+    99% {
+        z-index: 3;
+    }
     100% {
-      opacity: 0;
+        opacity: 0;
+        z-index: -300;
     }
 } 

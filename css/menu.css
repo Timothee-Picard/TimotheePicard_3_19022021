@@ -136,6 +136,56 @@ main article p span {
   float: right;
 }
 
+main .delay-1 {
+  -webkit-animation: test 1s 0.1s both;
+          animation: test 1s 0.1s both;
+}
+
+main .delay-2 {
+  -webkit-animation: test 1s 0.2s both;
+          animation: test 1s 0.2s both;
+}
+
+main .delay-3 {
+  -webkit-animation: test 1s 0.3s both;
+          animation: test 1s 0.3s both;
+}
+
+main .delay-4 {
+  -webkit-animation: test 1s 0.4s both;
+          animation: test 1s 0.4s both;
+}
+
+main .delay-5 {
+  -webkit-animation: test 1s 0.5s both;
+          animation: test 1s 0.5s both;
+}
+
+main .delay-6 {
+  -webkit-animation: test 1s 0.6s both;
+          animation: test 1s 0.6s both;
+}
+
+main .delay-7 {
+  -webkit-animation: test 1s 0.7s both;
+          animation: test 1s 0.7s both;
+}
+
+main .delay-8 {
+  -webkit-animation: test 1s 0.8s both;
+          animation: test 1s 0.8s both;
+}
+
+main .delay-9 {
+  -webkit-animation: test 1s 0.9s both;
+          animation: test 1s 0.9s both;
+}
+
+main .delay-10 {
+  -webkit-animation: test 1s 1s both;
+          animation: test 1s 1s both;
+}
+
 main .order {
   text-align: center;
   padding: 2.5em 0;
@@ -152,5 +202,31 @@ main .order button {
   -webkit-box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.25);
           box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.25);
   font-weight: 600;
+}
+
+@-webkit-keyframes test {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes test {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=menu.css.map */
