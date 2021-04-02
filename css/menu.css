@@ -108,6 +108,35 @@ main .mainHeader {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+}
+
+main .mainHeader .test {
+  position: absolute;
+  top: 2;
+  right: 0;
+  height: 20px;
+  width: 20px;
+}
+
+main .mainHeader .test i {
+  font-size: 1.5em;
+  position: absolute;
+}
+
+main .mainHeader .test i + .fas {
+  color: transparent;
+}
+
+main .mainHeader .test i:hover {
+  background: red;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-animation: test ease 0.5s both;
+          animation: test ease 0.5s both;
 }
 
 main h2 {
@@ -137,53 +166,53 @@ main article p span {
 }
 
 main .delay-1 {
-  -webkit-animation: test 1s 0.1s both;
-          animation: test 1s 0.1s both;
+  -webkit-animation: commingTop 1s 0.1s both;
+          animation: commingTop 1s 0.1s both;
 }
 
 main .delay-2 {
-  -webkit-animation: test 1s 0.2s both;
-          animation: test 1s 0.2s both;
+  -webkit-animation: commingTop 1s 0.2s both;
+          animation: commingTop 1s 0.2s both;
 }
 
 main .delay-3 {
-  -webkit-animation: test 1s 0.3s both;
-          animation: test 1s 0.3s both;
+  -webkit-animation: commingTop 1s 0.3s both;
+          animation: commingTop 1s 0.3s both;
 }
 
 main .delay-4 {
-  -webkit-animation: test 1s 0.4s both;
-          animation: test 1s 0.4s both;
+  -webkit-animation: commingTop 1s 0.4s both;
+          animation: commingTop 1s 0.4s both;
 }
 
 main .delay-5 {
-  -webkit-animation: test 1s 0.5s both;
-          animation: test 1s 0.5s both;
+  -webkit-animation: commingTop 1s 0.5s both;
+          animation: commingTop 1s 0.5s both;
 }
 
 main .delay-6 {
-  -webkit-animation: test 1s 0.6s both;
-          animation: test 1s 0.6s both;
+  -webkit-animation: commingTop 1s 0.6s both;
+          animation: commingTop 1s 0.6s both;
 }
 
 main .delay-7 {
-  -webkit-animation: test 1s 0.7s both;
-          animation: test 1s 0.7s both;
+  -webkit-animation: commingTop 1s 0.7s both;
+          animation: commingTop 1s 0.7s both;
 }
 
 main .delay-8 {
-  -webkit-animation: test 1s 0.8s both;
-          animation: test 1s 0.8s both;
+  -webkit-animation: commingTop 1s 0.8s both;
+          animation: commingTop 1s 0.8s both;
 }
 
 main .delay-9 {
-  -webkit-animation: test 1s 0.9s both;
-          animation: test 1s 0.9s both;
+  -webkit-animation: commingTop 1s 0.9s both;
+          animation: commingTop 1s 0.9s both;
 }
 
 main .delay-10 {
-  -webkit-animation: test 1s 1s both;
-          animation: test 1s 1s both;
+  -webkit-animation: commingTop 1s 1s both;
+          animation: commingTop 1s 1s both;
 }
 
 main .order {
@@ -206,6 +235,24 @@ main .order button {
 
 @-webkit-keyframes test {
   0% {
+    height: 0%;
+  }
+  100% {
+    height: 150%;
+  }
+}
+
+@keyframes test {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 150%;
+  }
+}
+
+@-webkit-keyframes commingTop {
+  0% {
     opacity: 0;
     -webkit-transform: translateY(100px);
             transform: translateY(100px);
@@ -217,7 +264,7 @@ main .order button {
   }
 }
 
-@keyframes test {
+@keyframes commingTop {
   0% {
     opacity: 0;
     -webkit-transform: translateY(100px);
