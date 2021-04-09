@@ -26,28 +26,6 @@ main{
         align-items: center;
         justify-content: space-between;
         position: relative;
-        .test{
-            position: absolute;
-            top: 2;
-            right: 0;
-            height: 20px;
-            width: 20px;
-            i{
-                font-size: 1.5em;
-                position: absolute;
-                &+.fas{
-                    color: transparent;
-                }
-                &:hover{
-                    background: red;
-                    background: linear-gradient( to top, $pink, $purple);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    color: transparent;
-                    animation: test ease 0.5s both;
-                }
-            }
-        }
     }
     h2{
         text-transform: uppercase;
@@ -62,11 +40,62 @@ main{
         border-radius: 15px;
         padding: 0.5em 1em;
         margin: 1em 0;
-        //opacity: 0;
-        p{
-            width: 100%;
-            span{
-                float: right;
+        cursor: pointer;
+        overflow: hidden;
+        max-width: 100%;
+        display: flex;
+        .articleContent{
+            flex: 1;
+            overflow: hidden;
+            p,h3{
+                margin: 0;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            p{
+                width: 100%;
+                span{
+                    float: right;
+                }
+            }
+        }
+        .price{
+            font-weight: 700;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-left: .5rem;
+        }
+        .valid{
+            background-color: #99e2d0;
+            margin: -0.5em -5em -0.5em 1em;
+            transition-duration: 0.5s;
+            width: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .circle{
+                height: 1.8em;
+                width: 1.8em;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100px;
+                transform: rotate(180deg);
+                transition-duration: 0.5s;
+                i{
+                    color: $light_green;
+                }
+            }
+        }
+        &:hover{
+            .valid{
+                margin-right: -1em;
+                .circle{
+                    transform: rotate(0deg);
+                }
             }
         }
     }
@@ -79,24 +108,6 @@ main{
     .order{
         text-align: center;
         padding: 2.5em 0;
-        button{
-            background: linear-gradient($pink,$purple);
-            color: white;
-            border: none;
-            font-size: 1em;
-            border-radius: 50px;
-            padding: 1em 3em;
-            box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.25);
-            font-weight: 600;
-        }
-    }
-}
-@keyframes test {
-    0% {
-        height: 0%;
-    }
-    100% {
-        height: 150%;
     }
 }
 @keyframes commingTop {

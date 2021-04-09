@@ -19,6 +19,42 @@ header{
 img{
     object-fit: cover;
 }
+.animatedHeart{
+    top: 0;
+    padding-right: 1.5em;
+    i{
+        font-size: 1.5em;
+        position: absolute;
+        &:hover{
+            background: linear-gradient( to top, $pink, $purple);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: fillUp ease 0.5s both;
+        }
+        &+.fas{
+            color: transparent;
+        }
+    }
+    .far:hover{
+        color: red;
+    }
+}
+button{
+    cursor: pointer;
+    background: linear-gradient($pink,$purple);
+    color: white;
+    border: none;
+    font-size: 1em;
+    border-radius: 50px;
+    padding: 1em 2em;
+    font-weight: 600;
+    box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.25);
+    &:hover{
+        box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.50);
+        opacity:0.8
+    }
+}
 footer{
     padding: 1em;
     background-color: #303030;
@@ -47,5 +83,14 @@ footer{
                 color: white;
             }
         }
+    }
+}
+
+@keyframes fillUp {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 150%;
     }
 }

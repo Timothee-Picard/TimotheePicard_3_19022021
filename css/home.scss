@@ -22,16 +22,6 @@ main{
         p{
             padding: 1em 0;
         }
-        button{
-            background: linear-gradient($pink,$purple);
-            color: white;
-            border: none;
-            font-size: 1em;
-            border-radius: 50px;
-            padding: 1em 2em;
-            box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.25);
-            font-weight: 600;
-        }
     }
     .filters{
         padding: 1em;
@@ -43,6 +33,10 @@ main{
             box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.15);
             padding: 20px;
             margin: 20px 0;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.30);
+            }
             .circle{
                 position: absolute;
                 display: flex;
@@ -77,6 +71,10 @@ main{
                 border-radius: 20px;
                 margin: 20px 0;
                 position: relative;
+                box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.15);
+                &:hover{
+                    box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.30);
+                }
                 .new{
                     padding: 0.5em;
                     background-color: $light_green;
@@ -93,9 +91,8 @@ main{
                 }
                 figcaption{
                     padding: 1em;
-                    i{
+                    .animatedHeart{
                         float: right;
-                        color: $purple;
                     }
                 }
             }
@@ -150,8 +147,9 @@ main{
         border-radius: 50px;
         width: 30px;
         height: 30px;
-        border: 7px solid rgba(0, 0, 0, 0.8);
-        border-top: 7px solid rgba(0, 0, 0, 0.3);
+        border: 7px solid $purple;
+        border-top: 7px solid $pink;
+        border-bottom: 7px solid $pink;
     }
 }
 
