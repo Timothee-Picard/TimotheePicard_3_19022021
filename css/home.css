@@ -53,6 +53,10 @@ img {
           animation: fillUp ease 0.5s both;
 }
 
+.animatedHeart i:hover + .far {
+  display: none;
+}
+
 .animatedHeart i + .fas {
   color: transparent;
 }
