@@ -49,8 +49,8 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-animation: fillUp ease 0.5s both;
-          animation: fillUp ease 0.5s both;
+  -webkit-animation: fillUp ease 1.5s both;
+          animation: fillUp ease 1.5s both;
 }
 
 .animatedHeart i + .fas {
@@ -78,8 +78,7 @@ button {
 button:hover {
   -webkit-box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.5);
           box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.5);
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff9ee4), to(#ac80e2));
-  background: linear-gradient(#ff9ee4, #ac80e2);
+  opacity: 0.8;
 }
 
 footer {
@@ -122,19 +121,19 @@ footer ul li a {
 
 @-webkit-keyframes fillUp {
   0% {
-    height: 0%;
+    height: 0;
   }
   100% {
-    height: 150%;
+    height: 25px;
   }
 }
 
 @keyframes fillUp {
   0% {
-    height: 0%;
+    height: 0;
   }
   100% {
-    height: 150%;
+    height: 25px;
   }
 }
 
@@ -269,8 +268,8 @@ main article .valid .circle {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 100px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }

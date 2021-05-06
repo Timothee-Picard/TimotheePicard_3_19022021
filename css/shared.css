@@ -49,8 +49,8 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-animation: fillUp ease 0.5s both;
-          animation: fillUp ease 0.5s both;
+  -webkit-animation: fillUp ease 1.5s both;
+          animation: fillUp ease 1.5s both;
 }
 
 .animatedHeart i + .fas {
@@ -121,19 +121,19 @@ footer ul li a {
 
 @-webkit-keyframes fillUp {
   0% {
-    height: 0%;
+    height: 0;
   }
   100% {
-    height: 150%;
+    height: 25px;
   }
 }
 
 @keyframes fillUp {
   0% {
-    height: 0%;
+    height: 0;
   }
   100% {
-    height: 150%;
+    height: 25px;
   }
 }
 /*# sourceMappingURL=shared.css.map */

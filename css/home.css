@@ -49,12 +49,8 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-animation: fillUp ease 0.5s both;
-          animation: fillUp ease 0.5s both;
-}
-
-.animatedHeart i:hover + .far {
-  display: none;
+  -webkit-animation: fillUp ease 1.5s both;
+          animation: fillUp ease 1.5s both;
 }
 
 .animatedHeart i + .fas {
@@ -125,19 +121,19 @@ footer ul li a {
 
 @-webkit-keyframes fillUp {
   0% {
-    height: 0%;
+    height: 0;
   }
   100% {
-    height: 150%;
+    height: 25px;
   }
 }
 
 @keyframes fillUp {
   0% {
-    height: 0%;
+    height: 0;
   }
   100% {
-    height: 150%;
+    height: 25px;
   }
 }
 
@@ -199,6 +195,11 @@ main .filters .filter {
 main .filters .filter:hover {
   -webkit-box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.3);
           box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.3);
+  background-color: #ececec;
+}
+
+main .filters .filter:hover i {
+  color: #9356DC;
 }
 
 main .filters .filter .circle {
