@@ -195,7 +195,7 @@ main .filters .filter {
 main .filters .filter:hover {
   -webkit-box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.3);
           box-shadow: 0.25em 0.25em 15px rgba(0, 0, 0, 0.3);
-  background-color: #ececec;
+  background-color: #d1c0e5;
 }
 
 main .filters .filter:hover i {
